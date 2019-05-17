@@ -1,0 +1,13 @@
+﻿@using RssDeneme.Models
+@model List<RssHaberModel>
+
+@foreach (RssHaberModel item in Model)
+{
+    <b>@item.Title</b>
+    <br />
+    <img src="@item.ImageUrl" alt="resim" height="150" />
+    <br />
+    @item.Description
+    <a href="@item.Link">Detay</a>
+    <hr />
+}
